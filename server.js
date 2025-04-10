@@ -28,6 +28,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Mount routers
 app.use('/api/v1/auth', require('./routes/authRoutes'));
+app.use('/api/v1/services', require('./routes/serviceRoutes'));
+
 
 // Error handler middleware
 app.use(errorHandler);
