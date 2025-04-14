@@ -41,9 +41,15 @@ app.use(fileUpload({
 
 // Mount routers
 app.use('/api/v1/auth', require('./routes/authRoutes'));
+app.use('/api/v1/auth/verifyemail', require('./routes/authRoutes'));
+app.use('/api/v1/auth/resend-verification', require('./routes/authRoutes'));
 app.use('/api/v1/services', require('./routes/serviceRoutes'));
 app.use('/api/v1/experts', require('./routes/expertRoutes'));
 app.use('/api/v1/workshops', require('./routes/workshopRoutes'));
+app.use('/api/v1/programs', require('./routes/programRoutes'));
+app.use('/api/v1/resources', require('./routes/resourceRoutes'));
+
+
 
 
 // Error handler middleware
