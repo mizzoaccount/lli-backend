@@ -118,7 +118,7 @@ exports.register = asyncHandler(async (req, res, next) => {
   await user.save({ validateBeforeSave: false });
 
   // Create verification URL
-  const verificationUrl = `http://localhost:5000/api/v1/auth/verifyemail/${verificationToken}`;
+  const verificationUrl = `https://lli-backend.onrender.com/api/v1/auth/verifyemail/${verificationToken}`;
  // const verificationUrl = `${req.protocol}://${req.get('host')}/api/v1/auth/verifyemail/${verificationToken}`;
   console.log(`Verification URL: ${verificationUrl}`);
 
@@ -289,7 +289,7 @@ exports.resendVerification = asyncHandler(async (req, res, next) => {
   await user.save({ validateBeforeSave: false });
 
   // Create verification URL
-  const verificationUrl = `http://localhost:5000/api/v1/auth/verifyemail/${verificationToken}`;
+  const verificationUrl = `https://lli-backend.onrender.com/api/v1/auth/verifyemail/${verificationToken}`;
 
   try {
     // Send verification email using Resend
