@@ -126,7 +126,7 @@ exports.register = asyncHandler(async (req, res, next) => {
     // Send verification email using Resend
     console.log(`Sending email to: ${user.email}`);
     await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'support@legislativeleadershipinstitute.com',
       to: user.email,
       subject: 'Email Verification',
       html: `
@@ -294,7 +294,8 @@ exports.resendVerification = asyncHandler(async (req, res, next) => {
   try {
     // Send verification email using Resend
     await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'support@legislativeleadershipinstitute.com',
+     //from: 'onboarding@resend.dev',
       to: user.email,
       subject: 'Email Verification (Resend)',
       html: `
