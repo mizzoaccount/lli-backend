@@ -49,6 +49,7 @@ app.use('/api/v1/experts', require('./routes/expertRoutes'));
 app.use('/api/v1/workshops', require('./routes/workshopRoutes'));
 app.use('/api/v1/programs', require('./routes/programRoutes'));
 app.use('/api/v1/resources', require('./routes/resourceRoutes'));
+app.use('/api/v1/subscriptions', require('./routes/subscriptionRoutes'));
 
 
 
